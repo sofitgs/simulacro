@@ -20,4 +20,4 @@ let numerofinalsuertudo = numerossuerte.concat(multiplicadores.concat(divisores)
 
 numerossuerte.splice(1,3)
 
-console.log(numerofinalsuertudo)
+console.log(numerofinalsuertudo + 4)
