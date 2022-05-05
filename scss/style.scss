@@ -1,0 +1,22 @@
+$color1: #1D3461;
+$color2: #1F487E;
+$color3: #376996;
+$color4: #2CA58D;
+$color5: #84BC9C;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//navegador
+nav-link {
+    color: $color2;
+    font-size: 15px;
+}
+
+nav-link active {
+    color: $color4;
+    font-weight: bold;
+}

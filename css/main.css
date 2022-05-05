@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+nav-link {
+  color: #1F487E;
+  font-size: 15px; }
+
+nav-link active {
+  color: #2CA58D;
+  font-weight: bold; }
