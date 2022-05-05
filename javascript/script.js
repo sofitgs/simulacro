@@ -23,16 +23,32 @@ numerossuerte.splice(1,3)
 
 console.log(numerofinalsuertudo + 4) */
 
+
 //Conoce los precios de los jugadores de fútbol activos
 
-let jugadores = [
-    {nombre: "Harry Kane", precio: "100,00 millones de euros", edad: 28, equipo: "Tottenham Hotspur"},
-    {nombre: "Mohamed Salah", precio: "100,00 millones de euros",edad: 29, equipo: "Liverpool"},
-    {nombre: "Phil Foden", precio: "90,00 millones de euros", edad: 21, equipo: "Manchester City"},
-    {nombre: "Bruno Fernandes", precio: "90,00 millones de euros", edad: 27, equipo: "Manchester United"},
-    {nombre: "Kevin De bruyne", precio: "90,00 millones de euros",edad: 30, equipo: "Manchester City"}
+class Jugadores {
+    constructor(nombre,precio,edad,equipo){
+        this.nombre = nombre
+        this.precio = precio
+        this.edad = edad
+        this.equipo = equipo
+    }
+}
+    const jugador1 = new Jugadores ("Harry Kane", "100,00 millones de euros", 28, "Tottenham Hotspur")
+    const jugador2 = new Jugadores ("Mohamed Salah", "100,00 millones de euros",  29, "Liverpool")
+    const jugador3 = new Jugadores ("Phil Foden",  "90,00 millones de euros",  21, "Manchester City")
+    const jugador4 = new Jugadores ("Bruno Fernandes", "90,00 millones de euros", 27, "Manchester United")
+    const jugador5 = new Jugadores ("Kevin De bruyne", "90,00 millones de euros", 30, "Manchester City")
 
-]
-
-let top5 = prompt ("Ingrese el nombre del jugador para conocer si está en el top 5")
-console.log (jugadores)
+let top5 = prompt ("Ingrese un número para conocer el jugador del top")
+if (top5 == 1){
+    console.log (jugador1)
+}else if (top5 == 2){
+    console.log(jugador2)
+}else if (top5 == 3){
+    console.log(jugador3)
+}else if (top5 == 4){
+    console.log(jugador4)
+}else if (top5 == 5){
+    console.log(jugador5)
+}
