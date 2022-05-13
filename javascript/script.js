@@ -2,7 +2,7 @@ class Jugador {
     constructor(id, nombre, precio, edad, equipo) {
         this.id = id
         this.nombre = nombre
-        this.precio = precio 
+        this.precio = precio
         this.edad = edad
         this.equipo = equipo
     }
@@ -17,8 +17,8 @@ let Jugadores = [jugador1, jugador2, jugador3, jugador4, jugador5]
 
 let divJugadores = document.getElementById('divJugadores')
 
-jugadores.forEach(jugador => {
-    divJugadores.innerHTML += 
+Jugadores.forEach(jugador => {
+    divJugadores.innerHTML += `
     <div id= "jugador$(jugador.id)">
         <div>
             <p>Nombre: ${jugador.nombre}</p>
@@ -26,5 +26,5 @@ jugadores.forEach(jugador => {
             <p>Edad: ${jugador.edad}</p>
             <p>Equipo: ${jugador.equipo}</p>
         </div>
-    </div>
-    })
+    </div>`
+})
