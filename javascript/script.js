@@ -15,6 +15,16 @@ const jugador5 = new Jugador(5, "Kevin De bruyne", "90,00 millones de euros", 30
 
 let Jugadores = [jugador1, jugador2, jugador3, jugador4, jugador5]
 
+/* Aquí esta la función que me faltaba para la primera entrega del proyecto final
+let precioJugadores = [100,100,90,90,90]
+let compraJugadores = [jugador1,jugador2, jugador3, jugador4, jugador5]
+
+compraJugadores = Jugadores.sort((jugador1,jugador3) => {
+    return jugador1.precio + jugador3.precio
+})
+
+console.log(compraJugadores) */
+
 let divJugadores = document.getElementById('divJugadores')
 
 Jugadores.forEach(jugador => {
@@ -34,3 +44,4 @@ let boton1 = document.getElementById('boton1')
 boton1.addEventListener('click', () => {
     console.log("Sugerencia Enviada")
 })
+
