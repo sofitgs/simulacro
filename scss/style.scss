@@ -20,3 +20,24 @@ nav-link active {
     color: $color4;
     font-weight: bold;
 }
+
+.h3 {
+    color: $color4;
+    padding-top: 10vh;
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 3vh;
+}
+
+.espacio{
+ padding-top: 10vh;
+}
+
+.boton {
+    width: 8vh;
+    height: 5vh;
+    background-color: $color1;
+    color: #ffff;
+}
+

@@ -28,3 +28,9 @@ Jugadores.forEach(jugador => {
         </div>
     </div>`
 })
+
+let boton1 = document.getElementById('boton1')
+
+boton1.addEventListener('click', () => {
+    console.log("Sugerencia Enviada")
+})
