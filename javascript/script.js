@@ -49,4 +49,13 @@ boton1.addEventListener('click', () => {
 let jugadorJSON = JSON.stringify(jugador1)
 console.log(jugadorJSON)
 
+localStorage.setItem('Jugador1', 'Harry Kane')
+localStorage.setItem('Jugador2', 'Mohamed Salah')
+localStorage.setItem('Jugador3', 'Phil Foden')
+localStorage.setItem('Jugador4', 'Bruno Fernandes')
+localStorage.setItem('Jugador5', 'Kevin De Bruyne')
+
+console.log(localStorage.getItem('Jugador5'))
+
+
 
