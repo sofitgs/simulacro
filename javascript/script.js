@@ -45,3 +45,8 @@ boton1.addEventListener('click', () => {
     console.log("Sugerencia Enviada")
 })
 
+
+let jugadorJSON = JSON.stringify(jugador1)
+console.log(jugadorJSON)
+
+
