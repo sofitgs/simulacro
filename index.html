@@ -6,58 +6,321 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <section>
     <nav>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Top 10</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">11 ideal del mes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Con proyección</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Recomendado</a>
-        </li>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a href="index.html">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">Top 10</button>
+        </li></a>
+        <a href="pages/onceideal.html">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">11 ideal del mes</button>
+          </li>
+        </a>
+        <a href="pages/conproyeccion.html">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Con proyección</button>
+          </li>
+        </a>
+        <a href="pages/recomendado.html">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+              type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Recomendado</button>
+          </li>
+        </a>
       </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      </div>
     </nav>
   </section>
-  <div id="divJugadores">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="img/Mbappe.jpeg" class="card-img-top" alt="Kylian Mbappé">
+            <div class="card-body">
+              <h5 class="card-title">Kylian Mbappé</h5>
+              <p class="card-text">Delantero Centro. Francés. Actualmente tiene contrato por 3 años.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: 160,00 mill €</li>
+              <li class="list-group-item">Edad: 23 </li>
+              <li class="list-group-item">Club: PSG </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="img/haaland.jpeg" class="card-img-top" alt="Erling Haaland">
+            <div class="card-body">
+              <h5 class="card-title">Erling Haaland</h5>
+              <p class="card-text">Delantero Centro. Noruego. Actualmente tiene contrato por 5 años.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: 150,00 mill €</li>
+              <li class="list-group-item">Edad: 21 </li>
+              <li class="list-group-item">Club: Manchester city </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="img/vini.jpeg" class="card-img-top" alt="Vinicius Junior">
+            <div class="card-body">
+              <h5 class="card-title">Vinicius Junior</h5>
+              <p class="card-text">Extremo Izquierdo. Brasilero. Actualmente tiene contrato por 3 años.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Precio: 100,00 mill €</li>
+              <li class="list-group-item">Edad: 21 </li>
+              <li class="list-group-item">Club: Real Madrid </li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="espacio">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="img/salah.jpg" class="card-img-top" alt="Mohamed Salah">
+              <div class="card-body">
+                <h5 class="card-title">Mohamed Salah</h5>
+                <p class="card-text">Extremo Izquierdo. Egipcio. Actualmente tiene contrato por 1 año.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Precio: 100,00 mill €</li>
+                <li class="list-group-item">Edad: 29 </li>
+                <li class="list-group-item">Club: Liverpool </li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="img/kane.webp" class="card-img-top" alt="Harry Kane">
+              <div class="card-body">
+                <h5 class="card-title">Harry Kane</h5>
+                <p class="card-text">Delantero Centro. Inglés. Actualmente tiene contrato por 2 años.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Precio: 100,00 mill €</li>
+                <li class="list-group-item">Edad: 28 </li>
+                <li class="list-group-item">Club: Tottenham Hotspurs </li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="img/foden.jpeg" class="card-img-top" alt="Phil Foden">
+              <div class="card-body">
+                <h5 class="card-title">Phil Foden</h5>
+                <p class="card-text">Mediocentro. Inglés. Actualmente tiene contrato por 2 años.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Precio: 90,00 mill €</li>
+                <li class="list-group-item">Edad: 21 </li>
+                <li class="list-group-item">Club: Manchester City </li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="espacio">
+          <div class="row align-items-end">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/fernandes.jpeg" class="card-img-top" alt="Bruno Fernandes">
+                <div class="card-body">
+                  <h5 class="card-title">Bruno Fernandes</h5>
+                  <p class="card-text">Mediocentro Ofensivo. Portugués. Actualmente tiene contrato por 4 años.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 90,00 mill €</li>
+                  <li class="list-group-item">Edad: 27 </li>
+                  <li class="list-group-item">Club: Manchester United </li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/debruyne.jpeg" class="card-img-top" alt="Kevin De Bruyne">
+                <div class="card-body">
+                  <h5 class="card-title">Kevin De Bruyne</h5>
+                  <p class="card-text">Mediocentro Ofensivo. Belga. Actualmente tiene contrato por 1 año.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 90,00 mill €</li>
+                  <li class="list-group-item">Edad: 30 </li>
+                  <li class="list-group-item">Club: Manchester City </li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/neymar.jpeg" class="card-img-top" alt="Neymar Junior">
+                <div class="card-body">
+                  <h5 class="card-title">Neymar Junior</h5>
+                  <p class="card-text">Extremo Izquierdo. Francés. Actualmente tiene contrato por 3 años.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Precio: 90,00 mill €</li>
+                  <li class="list-group-item">Edad: 30 </li>
+                  <li class="list-group-item">Club: PSG </li>
+                </ul>
+                <div class="card-body">
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="espacio">
+            <div class="row align-items-end">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="img/vlahovic.jpeg" class="card-img-top" alt="Dušan Vlahović">
+                  <div class="card-body">
+                    <h5 class="card-title">Dušan Vlahović</h5>
+                    <p class="card-text">Delantero Centro. Serbio. Actualmente tiene contrato por 4 años.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Precio: 85,00 mill €</li>
+                    <li class="list-group-item">Edad: 22 </li>
+                    <li class="list-group-item">Club: Juventus </li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="img/jugador-random.png" class="card-img-top" alt="persona jugando fútbol">
+                  <div class="card-body">
+                    <h5 class="card-title">¿Lo conoces?</h5>
+                    <p class="card-text">Pivote. Alemán. Actualmente tiene contrato por 3 años.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Precio: 85,00 mill €</li>
+                    <li class="list-group-item">Edad: 27 </li>
+                    <li class="list-group-item">Club: Bayern Münich </li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link--revelar">
+                      <button id="boton2" class="boton">
+                        Si
+                      </button></a>
+                    <a href="#" class="card-link--error">
+                      <button id="boton3" class="boton">
+                        No
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="img/jugador-random.png" class="card-img-top" alt="persona jugando fútbol">
+                  <div class="card-body">
+                    <h5 class="card-title">¿Lo conoces?</h5>
+                    <p class="card-text">Extremo izquierdo. Inglés. Actualmente tiene contrato por 1 año.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Precio: 85,00 mill €</li>
+                    <li class="list-group-item">Edad: 27 </li>
+                    <li class="list-group-item">Club: Manchester City </li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link--revelar">
+                      <button id="boton4" class="boton">
+                        Si
+                      </button></a>
+                    <a href="#" class="card-link--error">
+                      <button id="boton3" class="boton">
+                        No
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  </div>
-<div class="espacio">
+        <div>
+          <p class="h3">
+            ¡Aceptamos sugerencias!
+          </p>
+        </div>
+        <div class="form">
+          <div>
+            <label for="nombre">Nombre Completo</label>
+            <input type="name" placeholder="Nombre y Apellido">
+          </div>
+          <div>
+            <label for="correo">Correo electrónico</label>
+            <input type="mail" placeholder="ejemplo@ejemplo.com">
+          </div>
+          <div>
+            <label for="Jugador sugerido">Nombre del jugador</label>
+            <input type="text" placeholder="Nombre del jugador">
+          </div>
+          <div>
+            <button id="boton1" class="boton">
+              Enviar
+            </button>
+          </div>
+        </div>
 
-</div>
-    <div>
-      <p class="h3">
-        ¡Aceptamos sugerencias!
-      </p>
-    </div>
-    <div class="form">
-      <div>
-        <label for="nombre">Nombre Completo</label>
-        <input type="name" placeholder="Nombre y Apellido"> 
-      </div>
-      <div>
-        <label for="correo">Correo electrónico</label>
-        <input type="mail" placeholder="ejemplo@ejemplo.com"> 
-      </div>
-      <div>
-        <label for="Jugador sugerido">Nombre del jugador</label>
-        <input type="text" placeholder="Nombre del jugador"> 
-      </div>
-      <div>
-        <button id="boton1" class="boton">
-          Enviar
-        </button>
-      </div>
-    </div>
-
-  <script src="javascript/script.js"> </script>
+        <script src="javascript/script.js"> </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"></script>
 </body>
