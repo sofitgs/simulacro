@@ -34,9 +34,9 @@ compraJugadores = Jugadores.sort((jugador1,jugador3) => {
 
 console.log(compraJugadores) */
 
-let divJugadores = document.getElementById('divJugadores')
+//let divJugadores = document.getElementById('divJugadores')
 
-Jugadores.forEach(jugador => {
+/*Jugadores.forEach(jugador => {
     divJugadores.innerHTML += `
     <div id= "jugador$(jugador.id)">
         <div>
@@ -46,13 +46,22 @@ Jugadores.forEach(jugador => {
             <p>Equipo: ${jugador.equipo}</p>
         </div>
     </div> ` 
-})
+})*/
 
 let boton1 = document.getElementById('boton1')
 
 boton1.addEventListener('click', () => {
-    console.log("Sugerencia Enviada")
+    //librería
+Swal.fire({
+    icon: 'success',
+    title: 'Sugerencia enviada',
+    text: 'Tendremos en cuenta a tu jugador!',
+    showCloseButton: true,
+    //footer: '<a href="">Why do I have this issue?</a>'
+  })
 })
+
+
 
 let boton2 = document.getElementById('boton2')
 
@@ -90,5 +99,4 @@ localStorage.setItem('Jugador12', 'Raheem Sterling')
 
 
 console.log(localStorage.getItem('Jugador10'))
-
 
